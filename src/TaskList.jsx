@@ -31,6 +31,7 @@ const Task = ({ todo, onComplete, onEdit, onDelete }) => {
     taskContent = (
       <>
         <input
+          style={{ minWidth: "6em" }}
           type="text"
           value={todo.title}
           onChange={(e) => onEdit({ ...todo, title: e.target.value })}
@@ -50,11 +51,7 @@ const Task = ({ todo, onComplete, onEdit, onDelete }) => {
   } else {
     taskContent = (
       <>
-        <span
-          style={{ textAlign:"left" }}
-        >
-          {todo.title}
-        </span>
+        <span style={{ textAlign: "left" }}>{todo.title}</span>
         <button
           className="btn"
           onClick={(e) => {

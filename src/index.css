@@ -188,10 +188,16 @@ ul {
   display: grid;
   grid-template-columns: 1em auto 6em 6em;
   grid-template-rows: 3em;
+  display: grid;
+  grid-template-columns: 1em auto 6em 6em;
+  grid-template-rows: 3em;
   font-size: var(--small-text);
   margin: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
+}
+.form-label > span {
+  padding: 0.6em;
 }
 .form-label > span {
   padding: 0.6em;
@@ -207,6 +213,7 @@ ul {
 }
 
 .form-row {
+  /* margin-bottom: 1rem; */
   /* margin-bottom: 1rem; */
   text-align: left;
 }

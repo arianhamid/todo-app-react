@@ -176,6 +176,7 @@ ul {
 
 .form {
   width: 90vw;
+  min-width: 375px;
   max-width: var(--fixed-width);
   background: var(--white);
   border-radius: var(--borderRadius);
@@ -184,11 +185,16 @@ ul {
   margin: 3rem auto;
 }
 .form-label {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1em auto 6em 6em;
+  grid-template-rows: 3em;
   font-size: var(--small-text);
   margin: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
+}
+.form-label > span {
+  padding: 0.6em;
 }
 .form-input,
 .form-textarea {
@@ -201,7 +207,7 @@ ul {
 }
 
 .form-row {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   text-align: left;
 }
 
@@ -224,8 +230,6 @@ ul {
 .form .btn-block {
   margin-top: 0.5rem;
 }
-
-/* alert */
 
 @keyframes spinner {
   to {

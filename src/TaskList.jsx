@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TaskList = ({ state, onComplete, onEdit, onDelete, onReset }) => {
   return (
-    <form className="form" style={{ width: "40%", marginTop: "0" }}>
+    <form className="form" style={{ marginTop: "1.5rem" }}>
       {state.todos.length < 1 ? (
         <button className="btn" onClick={onReset}>
           Reset List
@@ -51,7 +51,7 @@ const Task = ({ todo, onComplete, onEdit, onDelete }) => {
     taskContent = (
       <>
         <span
-          style={{ width: "50%", paddingRight: "6rem", paddingLeft: "0.5rem" }}
+          style={{ textAlign:"left" }}
         >
           {todo.title}
         </span>

@@ -1,4 +1,4 @@
-import { useReducer, useRef } from "react";
+import { useReducer } from "react";
 import AddTask from "./AddTask";
 import TaskList from "./TaskList";
 
@@ -65,7 +65,7 @@ const tasksReducer = (state, action) => {
         }),
       };
     case DELETE:
-      console.log(action);
+      
       return {
         ...state,
         todos: state.todos.filter((todo) => {

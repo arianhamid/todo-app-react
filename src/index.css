@@ -176,17 +176,17 @@ ul {
 
 .form {
   width: 90vw;
-  min-width: 375px;
+  min-width: 340px;
   max-width: var(--fixed-width);
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
-  padding: 2rem 2.5rem;
+  padding: 1em 0.5em;
   margin: 3rem auto;
 }
 .form-label {
   display: grid;
-  grid-template-columns: 1em auto 6em 6em;
+  grid-template-columns: 0.3em auto 6em 6em;
   grid-template-rows: 3em;
   display: grid;
   grid-template-columns: 1em auto 6em 6em;

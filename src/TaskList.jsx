@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TaskList = ({ state, onComplete, onEdit, onDelete, onReset }) => {
   return (
-    <form className="form" style={{ width: "40%", marginTop: "0" }}>
+    <form className="form" style={{ marginTop: "1.5rem" }}>
       {state.todos.length < 1 ? (
         <button className="btn" onClick={onReset}>
           Reset List

@@ -17,13 +17,13 @@ export const initialState = {
     },
   ],
   query: "",
+  initId: 4,
 };
 export const COMPLETE = "COMPLETE";
 export const ADD = "ADD";
 export const EDIT = "EDIT";
 export const DELETE = "DELETE";
 export const RESET = "RESET";
-let initId = 4;
 
 export const tasksReducer = (state, action) => {
   console.log(action);
@@ -43,9 +43,10 @@ export const tasksReducer = (state, action) => {
       console.log(action);
       return {
         ...state,
+        initId: state.initId + 1,
         todos: [
           ...state.todos,
-          { id: initId++, title: action.title, done: false },
+          { id: state.initId++, title: action.title, done: false },
         ],
       };
     case EDIT:

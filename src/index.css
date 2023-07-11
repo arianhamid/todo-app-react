@@ -200,9 +200,7 @@ ul {
 .form-label > span {
   padding: 0.6em;
 }
-.form-label > span {
-  padding: 0.6em;
-}
+
 .form-input,
 .form-textarea {
   width: 100%;
@@ -212,7 +210,12 @@ ul {
   background: var(--backgroundColor);
   border: 1px solid var(--grey-200);
 }
-
+input[type="text"] {
+  text-transform: capitalize;
+  padding: 0.6em;
+  letter-spacing: var(--letterSpacing);
+  font-size: var(--small-text);
+}
 .form-row {
   /* margin-bottom: 1rem; */
   /* margin-bottom: 1rem; */
